@@ -151,7 +151,8 @@ class Vector2():
         """
         magnitude = self.magnitude()
         if magnitude == 0:
-            return Vector2(0, 0)
+            self.x = 0
+            self.y = 0
         self.x /= magnitude
         self.y /= magnitude
 
